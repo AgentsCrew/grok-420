@@ -13,21 +13,14 @@ export default function Header() {
                     </span>
                 </Link>
 
-                {/* Center: Badge (Hidden on small mobile) */}
-                <div className="hidden md:flex items-center justify-center">
-                    <span className="rounded-full border border-yellow-500/30 bg-yellow-500/10 px-3 py-1 text-xs font-semibold text-yellow-500">
-                        UNOFFICIAL FAN SITE • NOT AFFILIATED WITH xAI
-                    </span>
-                </div>
-
                 {/* Right: CTA */}
-                <a
-                    href="mailto:contact@example.com?subject=Inquiry%20about%20grok-420.com"
+                <Link
+                    href="/buy-domain"
                     className="flex items-center gap-2 rounded-md bg-neon px-4 py-2 text-sm font-bold text-black transition-transform hover:scale-105 hover:shadow-[0_0_15px_#39FF14]"
                 >
                     <span>BUY DOMAIN</span>
                     <ExternalLink className="h-4 w-4" />
-                </a>
+                </Link>
             </div>
         </header>
     );
